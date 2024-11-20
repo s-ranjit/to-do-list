@@ -58,6 +58,7 @@
     text-transform: uppercase;
   }
 
+/* To do styling */
   .todo_list li:nth-child(odd) {
     background-color: rgba(179, 179, 179, 0.2);
   }
@@ -70,6 +71,7 @@
     background-color: rgb(245, 250, 179);
   }
   
+  /* In Progress styling */
   .inprogress_list {
     color: grey;
   }
@@ -98,7 +100,14 @@
   .inprogress-lists span {
     margin: auto;
   }
+
+  .progressing input[type="checkbox"]:checked + span::after {
+    content: "\1F504";
+    margin-left: 5px;
+  } 
   
+
+  /* Done styling */
   .done_list li:nth-child(odd) {
     background-color: rgba(231, 186, 218);
   }
@@ -171,5 +180,3 @@
   .decorated-heading::after {
     content: "\1F381";
 }
-    
-
